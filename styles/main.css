@@ -1,0 +1,24 @@
+
+/*sessao onde fica as configuraacoes principais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Achafont;
+    src: local(Achafont), url(fonts/Achafont.ttf);
+}
+body{
+    font-family: 'Creepster';
+}
+button,
+a,
+img:hover,
+button:hover,
+a:hover{
+    cursor: url();
+}

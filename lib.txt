@@ -1,0 +1,5 @@
+
+
+  Um jogo baseado no jodo de cartas de Hora de Aventura, onde o personagem "Jake" nos apresenta a "cards wars" ou guerra das cartas.
+
+  

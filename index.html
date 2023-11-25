@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <!--sessao de estilos da pagina-->
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/api.css">
+    <title>Guerra das Cartas</title>
+</head>
+<body>
+    <!--sessao responsavel pelos audios do jogo-->
+    <audio></audio>
+
+    <!--sessao responsavel pela area de fundo-->
+    <div class="background">
+        <img src="itens/background.jpg">
+    </div>
+
+    <!--sessao de container-->
+    <div class="container">
+        <div class="container__left">
+            <div class="card-box__container">
+                <div class="card-box framed" id="computer-cards"></div>
+                <div class="card-versus__container">
+                    <div class="versus-top">
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </div>
+
+                        <img src="monsters/tentacron.gif.gif" height="100px">
+
+                        <div class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </div>
+                    </div>
+                    <div class="versus-bottom">
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">ganhou</button>
+                    </div>
+                </div>
+                <div class="card-box framed" id="player-cards"></div>
+            </div>
+        </div>
+        <div class="container__right table-cards">
+            <div class="score_box frame">
+                <span id="score_points">Win : 0 | Lose : 0</span>
+            </div>
+            <div class="menu_avatar">
+                <img id="card-image" width="250rem">
+            </div>
+            <div class="card_details frame">
+                <p id="card-name">Selecione</p>
+                <p id="card-type">Uma carta</p>
+            </div>
+        </div>
+    </div><!--container-->
+
+    <!--sessao de javascript-->
+    <script src="engine.js" defer></script>
+</body>
+</html>
